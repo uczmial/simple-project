@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.66.73" id="TestPageDef" Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="PaProjectsAllView1" RangeSize="25"
+              DataControl="AppModuleDataControl"
+              id="PaProjectsAllView1Iterator" ChangeEventPolicy="ppr"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="PaProjectsAllView1Iterator" id="ProjectId">
+      <AttrNames>
+        <Item Value="ProjectId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaProjectsAllView1Iterator" id="Name">
+      <AttrNames>
+        <Item Value="Name"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaProjectsAllView1Iterator" id="Segment1">
+      <AttrNames>
+        <Item Value="Segment1"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaProjectsAllView1Iterator" id="CreatedBy">
+      <AttrNames>
+        <Item Value="CreatedBy"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaProjectsAllView1Iterator"
+                     id="LastUpdateLogin">
+      <AttrNames>
+        <Item Value="LastUpdateLogin"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaProjectsAllView1Iterator" id="ProjectType">
+      <AttrNames>
+        <Item Value="ProjectType"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaProjectsAllView1Iterator"
+                     id="CarryingOutOrganizationId">
+      <AttrNames>
+        <Item Value="CarryingOutOrganizationId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaProjectsAllView1Iterator"
+                     id="PublicSectorFlag">
+      <AttrNames>
+        <Item Value="PublicSectorFlag"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaProjectsAllView1Iterator"
+                     id="ProjectStatusCode">
+      <AttrNames>
+        <Item Value="ProjectStatusCode"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="PaProjectsAllView1Iterator" id="Description">
+      <AttrNames>
+        <Item Value="Description"/>
+      </AttrNames>
+    </attributeValues>
+    <action IterBinding="PaProjectsAllView1Iterator" id="First"
+            RequiresUpdateModel="true" Action="first"/>
+    <action IterBinding="PaProjectsAllView1Iterator" id="Previous"
+            RequiresUpdateModel="true" Action="previous"/>
+    <action IterBinding="PaProjectsAllView1Iterator" id="Next"
+            RequiresUpdateModel="true" Action="next"/>
+    <action IterBinding="PaProjectsAllView1Iterator" id="Last"
+            RequiresUpdateModel="true" Action="last"/>
+  </bindings>
+</pageDefinition>

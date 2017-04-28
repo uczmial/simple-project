@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<References xmlns="http://xmlns.oracle.com/adf/jndi">
+   <Reference name="12iDB" className="oracle.jdeveloper.db.adapter.DatabaseProvider" credentialStoreKey="12iDB" xmlns="">
+      <Factory className="oracle.jdeveloper.db.adapter.DatabaseProviderFactory"/>
+      <RefAddresses>
+         <StringRefAddr addrType="subtype">
+            <Contents>oraJDBC</Contents>
+         </StringRefAddr>
+         <StringRefAddr addrType="user">
+            <Contents>apps</Contents>
+         </StringRefAddr>
+         <SecureRefAddr addrType="password"/>
+         <StringRefAddr addrType="DeployPassword">
+            <Contents>true</Contents>
+         </StringRefAddr>
+         <StringRefAddr addrType="customUrl">
+            <Contents>jdbc:oracle:thin:@ldap://tnsnames.adcom.ucl.ac.uk:4032/EBSUAT,cn=OracleContext,dc=cman,dc=adcom,dc=ucl,dc=ac,dc=uk</Contents>
+         </StringRefAddr>
+      </RefAddresses>
+   </Reference>
+</References>
